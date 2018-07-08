@@ -17,10 +17,10 @@
 
     $password = $_POST['password'];
 
-    if ($password=='23519!'){
+    if ($password=='XXX'){
 
-        $dbc = mysqli_connect('localhost','root','root','23519_bap_nieuwsbrief') or die('Error connecting to MySQL server.');
-        $query = "SELECT * FROM nieuwsbrief";
+        $dbc = mysqli_connect('XXX') or die('Error connecting to MySQL server.');
+        $query = "SELECT * FROM newz";
         $result = mysqli_query($dbc, $query) or die('Error querying database.');
 
         echo'<table>';
