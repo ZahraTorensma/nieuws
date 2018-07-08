@@ -23,18 +23,18 @@
     $subject = mysqli_real_escape_string($dbc, trim($_POST['subject']));
     $message =$_POST['message'];
 
-    if ($password=='23519!'){
+    if ($password=='XXX(niet mn echte natuurlijk'){
 
 
-        $dbc = mysqli_connect('localhost','23519','23519','23519_bap_nieuwsbrief') or die('Error connecting to MySQL server.');
-        $query = "SELECT * FROM nieuwsbrief";
+        $dbc = mysqli_connect('XXX') or die('Error connecting to MySQL server.');
+        $query = "SELECT * FROM newz";
         $result = mysqli_query($dbc, $query) or die('Error querying database.');
 
         while($row = mysqli_fetch_array($result)){
             $mail = $row['mail'];
 
             $to = $mail;
-            $from =  '23519@ma-web.nl';
+            $from =  'XXX';
 
             mail($to,$subject,$message,'From: ' . $from) or die('Error mailing.');
             echo 'gemaild naar ' . $to . '; ';
