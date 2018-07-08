@@ -22,8 +22,8 @@
     $achternaam = $_POST['achternaam'];
     $mail = $_POST['mail'];
 
-    $dbc = mysqli_connect('localhost','root','root','23519_bap_nieuwsbrief') or die('Error connecting to MySQL server.');
-    $query = "INSERT INTO nieuwsbrief(voornaam,tussenvoegsel,achternaam,mail)
+    $dbc = mysqli_connect('XXX') or die('Error connecting to MySQL server.');
+    $query = "INSERT INTO newz(voornaam,tussenvoegsel,achternaam,mail)
               VALUES ('$voornaam','$tussenvoegsel','$achternaam','$mail')";
     $result = mysqli_query($dbc, $query) or die('Error querying database.');
     mysqli_close($dbc);
