@@ -1,0 +1,60 @@
+body{
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('http://para2000.org/wings/data/littlecloud-spirulinegt_pub_uk_files/background_01.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: #516375;
+}
+
+table, td{
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
+    border-width: 2px;
+    padding: 10px;
+}
+
+#kop{
+    background-color: rgba(255, 255, 255, 1);
+    width: 50%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    margin-left: -1%;
+}
+
+#ijsberg{
+    font-family: 'Expletus Sans', cursive;
+}
+
+#zin{
+    color: #516375;
+    font-size: 1.2em;
+}
+
+h2{
+    color: #11285C;
+}
+
+#wrapper{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    padding: 0% 1% 0% 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+a{
+    text-decoration: none;
+    color: #647587;
+}
+
+input{
+    float: right;
+}
+
+.maill{
+    float: left;
+}
