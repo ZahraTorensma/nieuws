@@ -20,8 +20,8 @@
 //$mail = $_POST['mail'];
 $mail = mysqli_real_escape_string($dbc, trim($_POST['mail']));
 
-$dbc = mysqli_connect('localhost','root','root','23519_bap_nieuwsbrief') or die('Error connecting to MySQL server.');
-$query = "DELETE FROM nieuwsbrief WHERE mail='$mail'";
+$dbc = mysqli_connect(XXX) or die('Error connecting to MySQL server.');
+$query = "DELETE FROM newz WHERE mail='$mail'";
 $result = mysqli_query($dbc, $query) or die('Error querying database.');
 mysqli_close($dbc);
 
