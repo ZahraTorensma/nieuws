@@ -22,8 +22,8 @@
     $mail = $_POST['mail'];
 
 
-$dbc = mysqli_connect('localhost','root','root','23519_bap_nieuwsbrief') or die('Error connecting to MySQL server.');
-    $query = "UPDATE nieuwsbrief
+$dbc = mysqli_connect('XXX') or die('Error connecting to MySQL server.');
+    $query = "UPDATE newz
               SET voornaam='$voornaam',tussenvoegsel='$tussenvoegsel',achternaam='$achternaam',mail='$mail'
               WHERE id='$id'";
     $result = mysqli_query($dbc, $query) or die('Error querying database.');
